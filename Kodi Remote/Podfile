@@ -1,11 +1,15 @@
 # Uncomment this line to define a global platform for your project
 # platform :ios, '6.0'
 
-target 'Kodi Remote' do
+use_frameworks!
 
+target 'Kodi Remote' do
+	source 'https://github.com/CocoaPods/Specs.git'
+	pod 'Alamofire', '~> 1.1'
 end
 
 target 'Kodi RemoteTests' do
-
+        source 'https://github.com/CocoaPods/Specs.git'
+        pod 'Alamofire', '~> 1.1'
 end
 
