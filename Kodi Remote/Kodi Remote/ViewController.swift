@@ -11,11 +11,31 @@ import Alamofire
 import SwiftyJSON
 
 class ViewController: NSViewController {
-
+    
+    @IBOutlet var btnOk: NSButton!
+    @IBOutlet var btnUp: NSButton!
+    @IBOutlet var btnDown: NSButton!
+    @IBOutlet var btnRight: NSButton!
+    @IBOutlet var btnLeft: NSButton!
+    @IBOutlet var btnBack: NSButton!
+    @IBOutlet var btnContext: NSButton!
+    
+    var btnActions : [NSButton: String] = [NSButton: String]()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        btnActions = [
+            btnOk:      "Input.Select",
+            btnUp:      "Input.Up",
+            btnDown:    "Input.Down",
+            btnRight:   "Input.Right",
+            btnLeft:    "Input.Left",
+            btnBack:    "Input.Back",
+            btnContext: "Input.ContextMenu"
+        ]
+        
     }
 
     override var representedObject: AnyObject? {
@@ -25,52 +45,56 @@ class ViewController: NSViewController {
     }
 
     @IBAction func btnClick(sender: AnyObject) {
-
-
-        // {"jsonrpc":"2.0","method":"Input.Left","id":1}
+            sendMessage(btnActions[sender as NSButton]!)
+    }
+    
+    
+    
+    
+    func sendMessage(action : String){
+        
         let parameters = [
-                "jsonrpc": "2.0",
-                "method": "Input.Down",
-                "id": 1
+            "jsonrpc": "2.0",
+            "method": action,
+            "id": 1
         ]
-
+        
         let url : String = "http://192.168.192.8:8080/jsonrpc"
         let URL = NSURL(string: url)!
         let mutableURLRequest = NSMutableURLRequest(URL: URL)
         mutableURLRequest.HTTPMethod = "POST"
-
+        
         var JSONSerializationError: NSError? = nil
         mutableURLRequest.HTTPBody = NSJSONSerialization.dataWithJSONObject(parameters, options: nil, error: &JSONSerializationError)
         mutableURLRequest.setValue("application/json", forHTTPHeaderField: "Content-Type")
-
+        
         request(mutableURLRequest)
-        .responseJSON
-        { (request, response, data, error) in
-
-            // Request error
-            if(error != nil) {
-
-                println(error)
-
-            }else{
-
-                // No error
-                var json = JSON(data!)
-                println(json)
-
-
-            }
-
-
-            /*if let delegate = self.delegate {
+            .responseJSON
+            { (request, response, data, error) in
+                
+                // Request error
+                if(error != nil) {
+                    
+                    println(error)
+                    
+                }else{
+                    
+                    // No error
+                    var json = JSON(data!)
+                    println(json)
+                    
+                    
+                }
+                
+                
+                /*if let delegate = self.delegate {
                 var json = JSON(data!)
                 //delegate.didReceiveResult(json)
                 println(json)
-            }*/
+                }*/
         }
-        
-        
+    
     }
-
+    
 }
 
