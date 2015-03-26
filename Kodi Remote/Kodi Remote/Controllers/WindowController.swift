@@ -13,8 +13,11 @@ class WindowController : NSWindowController {
     
     var keyActions : [UInt16: String] = [UInt16: String]()
     let apiManager : APIManager = APIManager()
-
+    
     override func windowDidLoad() {
+
+        self.window?.title = "Kodi Remote"
+
         keyActions = [
             49:     "Input.ContextMenu",
             123:    "Input.Left",
