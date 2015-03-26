@@ -16,6 +16,7 @@ class WindowController : NSWindowController {
 
     override func windowDidLoad() {
         keyActions = [
+            49:     "Input.ContextMenu",
             123:    "Input.Left",
             126:    "Input.Up",
             125:    "Input.Down",
@@ -27,8 +28,9 @@ class WindowController : NSWindowController {
     
     
     override func keyDown(theEvent: NSEvent) {
-        
-        apiManager.sendMessage(keyActions[theEvent.keyCode]!)
+        if let action = keyActions[theEvent.keyCode]{
+            apiManager.sendMessage(action)
+        }
         
     }
     
