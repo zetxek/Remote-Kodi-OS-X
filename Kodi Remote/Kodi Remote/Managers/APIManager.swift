@@ -1,55 +1,17 @@
 //
-//  ViewController.swift
+//  APIManager.swift
 //  Kodi Remote
 //
-//  Created by Adrián Moreno Peña on 23/03/15.
+//  Created by Adrián Moreno Peña on 26/03/15.
 //  Copyright (c) 2015 Nyan Software. All rights reserved.
 //
 
-import Cocoa
+import Foundation
 import Alamofire
 import SwiftyJSON
 
-class ViewController: NSViewController {
-    
-    @IBOutlet var btnOk: NSButton!
-    @IBOutlet var btnUp: NSButton!
-    @IBOutlet var btnDown: NSButton!
-    @IBOutlet var btnRight: NSButton!
-    @IBOutlet var btnLeft: NSButton!
-    @IBOutlet var btnBack: NSButton!
-    @IBOutlet var btnContext: NSButton!
-    
-    var btnActions : [NSButton: String] = [NSButton: String]()
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        btnActions = [
-            btnOk:      "Input.Select",
-            btnUp:      "Input.Up",
-            btnDown:    "Input.Down",
-            btnRight:   "Input.Right",
-            btnLeft:    "Input.Left",
-            btnBack:    "Input.Back",
-            btnContext: "Input.ContextMenu"
-        ]
-        
-    }
+class APIManager{
 
-    override var representedObject: AnyObject? {
-        didSet {
-        // Update the view, if already loaded.
-        }
-    }
-
-    @IBAction func btnClick(sender: AnyObject) {
-            sendMessage(btnActions[sender as NSButton]!)
-    }
-    
-    
-    
     
     func sendMessage(action : String){
         
@@ -93,8 +55,7 @@ class ViewController: NSViewController {
                 println(json)
                 }*/
         }
-    
+        
     }
-    
-}
 
+}
