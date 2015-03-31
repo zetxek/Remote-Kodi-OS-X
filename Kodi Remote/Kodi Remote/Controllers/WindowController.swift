@@ -27,6 +27,9 @@ class WindowController : NSWindowController {
             51:     "Input.Back",
             1010:   "Input.Select"
         ]
+		self.window?.titlebarAppearsTransparent = true
+		self.window?.movableByWindowBackground  = true
+		self.window?.backgroundColor = NSColor.blackColor()
     }
     
     
