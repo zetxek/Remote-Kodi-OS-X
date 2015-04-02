@@ -11,14 +11,8 @@ import Cocoa
 
 class WindowController : NSWindowController {
     
-    var keyActions : [UInt16: String] = [UInt16: String]()
-    let apiManager : APIManager = APIManager()
-    
-    override func windowDidLoad() {
-
-        self.window?.title = "Kodi Remote"
-
-        keyActions = [
+    struct Static {
+        static let keyActions : [UInt16: String] = [
             49:     "Input.ContextMenu",
             123:    "Input.Left",
             126:    "Input.Up",
@@ -27,6 +21,15 @@ class WindowController : NSWindowController {
             51:     "Input.Back",
             1010:   "Input.Select"
         ]
+    }
+
+    
+    
+    let apiManager : APIManager = APIManager()
+    
+    override func windowDidLoad() {
+
+        self.window?.title = "Kodi Remote"
 		self.window?.titlebarAppearsTransparent = true
 		self.window?.movableByWindowBackground  = true
 		self.window?.backgroundColor = NSColor.blackColor()
@@ -34,10 +37,12 @@ class WindowController : NSWindowController {
     
     
     override func keyDown(theEvent: NSEvent) {
-        if let action = keyActions[theEvent.keyCode]{
+        if let action = Static.keyActions[theEvent.keyCode]{
             apiManager.sendMessage(action)
         }
         
     }
+    
+    
     
 }

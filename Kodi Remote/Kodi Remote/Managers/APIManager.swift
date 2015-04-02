@@ -46,6 +46,18 @@ class APIManager{
                 url = "\(baseUrl)/jsonrpc"
             }
             
+            var user : NSString = ""
+            if (preferences.valueForKey(UserPreferences.preferenceUser) != nil){
+                user = preferences.stringForKey(UserPreferences.preferenceUser) as NSString!
+            }
+            
+            var password : NSString = ""
+            if (preferences.valueForKey(UserPreferences.preferencePassword) != nil){
+                password = preferences.stringForKey(UserPreferences.preferencePassword) as NSString!
+            }
+
+            let credential = NSURLCredential(user: user, password: password, persistence: .ForSession)
+
             NSLog("Invoking Kodi server, url=\(url)")
 
             
@@ -58,6 +70,7 @@ class APIManager{
             mutableURLRequest.setValue("application/json", forHTTPHeaderField: "Content-Type")
             
             request(mutableURLRequest)
+                .authenticate(usingCredential: credential)
                 .responseJSON
                 { (request, response, data, error) in
                     

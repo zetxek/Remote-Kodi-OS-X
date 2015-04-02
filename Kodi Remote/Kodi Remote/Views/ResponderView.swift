@@ -11,6 +11,8 @@ import Cocoa
 
 class ResponderView : NSView {
     
+    let apiManager : APIManager = APIManager()
+    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
@@ -21,5 +23,7 @@ class ResponderView : NSView {
     
     override func keyDown(theEvent: NSEvent) {
         NSLog("KeyDown: %@", theEvent)
+        apiManager.sendMessage(WindowController.Static.keyActions[theEvent.keyCode]!)
+
     }
 }
