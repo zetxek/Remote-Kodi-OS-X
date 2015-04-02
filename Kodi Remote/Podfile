@@ -5,15 +5,13 @@ use_frameworks!
 
 target 'Kodi Remote' do
 	source 'https://github.com/CocoaPods/Specs.git'
-	pod 'Alamofire', '~> 1.1'
-	
+	pod 'Alamofire', '~> 1.1'	
 	pod "SwiftyJSON", ">= 2.1.3"
 end
 
 target 'Kodi RemoteTests' do
         source 'https://github.com/CocoaPods/Specs.git'
         pod 'Alamofire', '~> 1.1'
-	
 	pod "SwiftyJSON", ">= 2.1.3"
 end
 

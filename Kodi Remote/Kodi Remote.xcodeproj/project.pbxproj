@@ -23,6 +23,8 @@
 		0A8A489F1AC4AF5C000EB0CF /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8A489D1AC4AF5C000EB0CF /* WindowController.swift */; };
 		0A8A48A11AC4B0FF000EB0CF /* ResponderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8A48A01AC4B0FF000EB0CF /* ResponderView.swift */; };
 		0A8A48A21AC4B0FF000EB0CF /* ResponderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8A48A01AC4B0FF000EB0CF /* ResponderView.swift */; };
+		0A9D39CC1ACDE2E300223DB3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9D39CB1ACDE2E300223DB3 /* Constants.swift */; };
+		0A9D39CD1ACDE2E300223DB3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9D39CB1ACDE2E300223DB3 /* Constants.swift */; };
 		10A80F81B72824B486BD9100 /* Pods_Kodi_RemoteTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA95699BEF8F153606EAEE3F /* Pods_Kodi_RemoteTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		9737F69D5B671BD3FBE864AE /* Pods_Kodi_Remote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52B2AE5329A537DA9172082B /* Pods_Kodi_Remote.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
@@ -52,6 +54,7 @@
 		0A8A48991AC4AF3E000EB0CF /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		0A8A489D1AC4AF5C000EB0CF /* WindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
 		0A8A48A01AC4B0FF000EB0CF /* ResponderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponderView.swift; sourceTree = "<group>"; };
+		0A9D39CB1ACDE2E300223DB3 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		14042A5C9B757E5A202DEC29 /* Pods-Kodi Remote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kodi Remote.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kodi Remote/Pods-Kodi Remote.release.xcconfig"; sourceTree = "<group>"; };
 		20E51806F2D31FE52785684C /* Pods-Kodi Remote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kodi Remote.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kodi Remote/Pods-Kodi Remote.debug.xcconfig"; sourceTree = "<group>"; };
 		52B2AE5329A537DA9172082B /* Pods_Kodi_Remote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kodi_Remote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,12 +132,14 @@
 		0A3F9EF51AC0C2BC008C6A4E /* Kodi Remote */ = {
 			isa = PBXGroup;
 			children = (
+				0A9D39CA1ACDE2CE00223DB3 /* Defines */,
 				0A8A489C1AC4AF5C000EB0CF /* Controllers */,
 				0A8A48981AC4AF3E000EB0CF /* Managers */,
 				0A016C701AC4AEB900590E32 /* Views */,
 				0A8A48941AC4AF36000EB0CF /* ViewControllers */,
 				0A016C491AC36C3C00590E32 /* Resources */,
 				0A3F9EF61AC0C2BC008C6A4E /* Supporting Files */,
+				0A9D39CE1ACDE3A600223DB3 /* Utils */,
 			);
 			path = "Kodi Remote";
 			sourceTree = "<group>";
@@ -188,6 +193,21 @@
 				0A8A489D1AC4AF5C000EB0CF /* WindowController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0A9D39CA1ACDE2CE00223DB3 /* Defines */ = {
+			isa = PBXGroup;
+			children = (
+				0A9D39CB1ACDE2E300223DB3 /* Constants.swift */,
+			);
+			path = Defines;
+			sourceTree = "<group>";
+		};
+		0A9D39CE1ACDE3A600223DB3 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		ADD37F41870A7FE965077237 /* Frameworks */ = {
@@ -413,6 +433,7 @@
 			files = (
 				0A8A489A1AC4AF3E000EB0CF /* APIManager.swift in Sources */,
 				0A8A48A11AC4B0FF000EB0CF /* ResponderView.swift in Sources */,
+				0A9D39CC1ACDE2E300223DB3 /* Constants.swift in Sources */,
 				0A8A489E1AC4AF5C000EB0CF /* WindowController.swift in Sources */,
 				0A8A48961AC4AF36000EB0CF /* ViewController.swift in Sources */,
 				0A3F9EF91AC0C2BC008C6A4E /* AppDelegate.swift in Sources */,
@@ -428,6 +449,7 @@
 				0A8A48A21AC4B0FF000EB0CF /* ResponderView.swift in Sources */,
 				0A8A489F1AC4AF5C000EB0CF /* WindowController.swift in Sources */,
 				0A8A48971AC4AF36000EB0CF /* ViewController.swift in Sources */,
+				0A9D39CD1ACDE2E300223DB3 /* Constants.swift in Sources */,
 				0A3F9F0F1AC0C2BC008C6A4E /* Kodi_RemoteTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
