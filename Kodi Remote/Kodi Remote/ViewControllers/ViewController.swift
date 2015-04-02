@@ -46,7 +46,11 @@ class ViewController: NSViewController {
     }
 
     @IBAction func btnClick(sender: AnyObject) {
-        apiManager.sendMessage(btnActions[sender as NSButton]!)
+        
+        if let action : NSString = btnActions[sender as NSButton]{
+            apiManager.sendMessage(action)
+        }
+        
     }
     
     
