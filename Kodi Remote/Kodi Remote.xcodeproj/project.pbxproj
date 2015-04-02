@@ -11,6 +11,7 @@
 		0A016C501AC36F4F00590E32 /* icon.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 0A016C4E1AC36F4F00590E32 /* icon.iconset */; };
 		0A016C731AC4AEB900590E32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A016C711AC4AEB900590E32 /* Main.storyboard */; };
 		0A016C741AC4AEB900590E32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A016C711AC4AEB900590E32 /* Main.storyboard */; };
+		0A1E6C131ACB579700142684 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1E6C121ACB579700142684 /* SettingsViewController.swift */; };
 		0A3F9EF91AC0C2BC008C6A4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F9EF81AC0C2BC008C6A4E /* AppDelegate.swift */; };
 		0A3F9F001AC0C2BC008C6A4E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A3F9EFF1AC0C2BC008C6A4E /* Images.xcassets */; };
 		0A3F9F0F1AC0C2BC008C6A4E /* Kodi_RemoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F9F0E1AC0C2BC008C6A4E /* Kodi_RemoteTests.swift */; };
@@ -39,6 +40,7 @@
 /* Begin PBXFileReference section */
 		0A016C4E1AC36F4F00590E32 /* icon.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = icon.iconset; sourceTree = "<group>"; };
 		0A016C721AC4AEB900590E32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0A1E6C121ACB579700142684 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		0A3F9EF31AC0C2BC008C6A4E /* Kodi Remote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kodi Remote.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A3F9EF71AC0C2BC008C6A4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A3F9EF81AC0C2BC008C6A4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				0A8A48951AC4AF36000EB0CF /* ViewController.swift */,
+				0A1E6C121ACB579700142684 /* SettingsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -413,6 +416,7 @@
 				0A8A489E1AC4AF5C000EB0CF /* WindowController.swift in Sources */,
 				0A8A48961AC4AF36000EB0CF /* ViewController.swift in Sources */,
 				0A3F9EF91AC0C2BC008C6A4E /* AppDelegate.swift in Sources */,
+				0A1E6C131ACB579700142684 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
