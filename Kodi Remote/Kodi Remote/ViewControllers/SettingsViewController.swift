@@ -23,7 +23,7 @@ class SettingsViewController : NSViewController {
         let preferences = NSUserDefaults.standardUserDefaults()
         
         if let url: NSString = preferences.stringForKey(UserPreferences.preferenceUrl) {
-            txtUrl.stringValue = url
+            txtUrl.stringValue = url as String
         }
 
         if let port = preferences.integerForKey(UserPreferences.preferencePort) as Int! {
@@ -31,11 +31,11 @@ class SettingsViewController : NSViewController {
         }
         
         if let user: NSString = preferences.stringForKey(UserPreferences.preferenceUser) {
-            txtUser.stringValue = user
+            txtUser.stringValue = user as String
         }
         
         if let password: NSString = preferences.stringForKey(UserPreferences.preferencePassword) {
-            txtPassword.stringValue = password
+            txtPassword.stringValue = password as String
         }
     }
     
@@ -74,7 +74,7 @@ class SettingsViewController : NSViewController {
             
             let alertMessage:NSAlert = NSAlert()
             alertMessage.messageText = "Ooops!"
-            alertMessage.informativeText = formValidationResult.errorMessage
+            alertMessage.informativeText = formValidationResult.errorMessage as String
             alertMessage.runModal()
             
         }
@@ -113,7 +113,7 @@ extension SettingsViewController{
     
     func isValidUrl(url : NSString) -> Bool{
 
-        if let url = NSURL(string: url) {
+        if let url = NSURL(string: url as String) {
             return true
         } else {
             return false

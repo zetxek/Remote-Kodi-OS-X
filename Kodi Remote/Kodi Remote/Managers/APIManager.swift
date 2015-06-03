@@ -56,7 +56,7 @@ class APIManager{
                 password = preferences.stringForKey(UserPreferences.preferencePassword) as NSString!
             }
 
-            let credential = NSURLCredential(user: user, password: password, persistence: .ForSession)
+            let credential = NSURLCredential(user: user as String, password: password as String, persistence: .ForSession)
 
             NSLog("Invoking Kodi server, url=\(url)")
 

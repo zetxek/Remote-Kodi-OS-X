@@ -25,7 +25,7 @@ class ResponderView : NSView {
         NSLog("KeyDown: %@", theEvent)
         
         if let action : NSString = WindowController.Static.keyActions[theEvent.keyCode]{
-            apiManager.sendMessage(action)
+            apiManager.sendMessage(action as String)
         }
 
     }
