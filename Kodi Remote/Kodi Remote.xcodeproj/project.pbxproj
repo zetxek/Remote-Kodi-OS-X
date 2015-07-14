@@ -15,6 +15,18 @@
 		0A3F9EF91AC0C2BC008C6A4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F9EF81AC0C2BC008C6A4E /* AppDelegate.swift */; };
 		0A3F9F001AC0C2BC008C6A4E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A3F9EFF1AC0C2BC008C6A4E /* Images.xcassets */; };
 		0A3F9F0F1AC0C2BC008C6A4E /* Kodi_RemoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F9F0E1AC0C2BC008C6A4E /* Kodi_RemoteTests.swift */; };
+		0A7177091B55AB59000CA6E0 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A7177071B55AB59000CA6E0 /* Fabric.framework */; };
+		0A71770A1B55AB59000CA6E0 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A7177071B55AB59000CA6E0 /* Fabric.framework */; };
+		0A71770B1B55AB59000CA6E0 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A7177081B55AB59000CA6E0 /* Crashlytics.framework */; };
+		0A71770C1B55AB59000CA6E0 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A7177081B55AB59000CA6E0 /* Crashlytics.framework */; };
+		0A71770E1B55ABDF000CA6E0 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A71770D1B55ABDF000CA6E0 /* libc++.dylib */; };
+		0A7177101B55ABE8000CA6E0 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A71770F1B55ABE8000CA6E0 /* libz.dylib */; };
+		0A7177121B55ABF0000CA6E0 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A7177111B55ABF0000CA6E0 /* Security.framework */; };
+		0A7177141B55ABFA000CA6E0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A7177131B55ABF9000CA6E0 /* SystemConfiguration.framework */; };
+		0A7177151B55AC3A000CA6E0 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A7177111B55ABF0000CA6E0 /* Security.framework */; };
+		0A7177161B55AC42000CA6E0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A7177131B55ABF9000CA6E0 /* SystemConfiguration.framework */; };
+		0A7177171B55AC85000CA6E0 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A71770D1B55ABDF000CA6E0 /* libc++.dylib */; };
+		0A7177181B55AC8F000CA6E0 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A71770F1B55ABE8000CA6E0 /* libz.dylib */; };
 		0A8A48961AC4AF36000EB0CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8A48951AC4AF36000EB0CF /* ViewController.swift */; };
 		0A8A48971AC4AF36000EB0CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8A48951AC4AF36000EB0CF /* ViewController.swift */; };
 		0A8A489A1AC4AF3E000EB0CF /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8A48991AC4AF3E000EB0CF /* APIManager.swift */; };
@@ -50,6 +62,12 @@
 		0A3F9F081AC0C2BC008C6A4E /* Kodi RemoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Kodi RemoteTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A3F9F0D1AC0C2BC008C6A4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A3F9F0E1AC0C2BC008C6A4E /* Kodi_RemoteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kodi_RemoteTests.swift; sourceTree = "<group>"; };
+		0A7177071B55AB59000CA6E0 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		0A7177081B55AB59000CA6E0 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		0A71770D1B55ABDF000CA6E0 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		0A71770F1B55ABE8000CA6E0 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		0A7177111B55ABF0000CA6E0 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		0A7177131B55ABF9000CA6E0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		0A8A48951AC4AF36000EB0CF /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0A8A48991AC4AF3E000EB0CF /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		0A8A489D1AC4AF5C000EB0CF /* WindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
@@ -68,7 +86,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A7177141B55ABFA000CA6E0 /* SystemConfiguration.framework in Frameworks */,
+				0A7177121B55ABF0000CA6E0 /* Security.framework in Frameworks */,
+				0A7177101B55ABE8000CA6E0 /* libz.dylib in Frameworks */,
+				0A71770E1B55ABDF000CA6E0 /* libc++.dylib in Frameworks */,
 				9737F69D5B671BD3FBE864AE /* Pods_Kodi_Remote.framework in Frameworks */,
+				0A71770B1B55AB59000CA6E0 /* Crashlytics.framework in Frameworks */,
+				0A7177091B55AB59000CA6E0 /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,7 +100,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A7177181B55AC8F000CA6E0 /* libz.dylib in Frameworks */,
+				0A7177171B55AC85000CA6E0 /* libc++.dylib in Frameworks */,
+				0A7177161B55AC42000CA6E0 /* SystemConfiguration.framework in Frameworks */,
+				0A7177151B55AC3A000CA6E0 /* Security.framework in Frameworks */,
 				10A80F81B72824B486BD9100 /* Pods_Kodi_RemoteTests.framework in Frameworks */,
+				0A71770C1B55AB59000CA6E0 /* Crashlytics.framework in Frameworks */,
+				0A71770A1B55AB59000CA6E0 /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,6 +243,12 @@
 		ADD37F41870A7FE965077237 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0A7177131B55ABF9000CA6E0 /* SystemConfiguration.framework */,
+				0A7177111B55ABF0000CA6E0 /* Security.framework */,
+				0A71770F1B55ABE8000CA6E0 /* libz.dylib */,
+				0A71770D1B55ABDF000CA6E0 /* libc++.dylib */,
+				0A7177071B55AB59000CA6E0 /* Fabric.framework */,
+				0A7177081B55AB59000CA6E0 /* Crashlytics.framework */,
 				52B2AE5329A537DA9172082B /* Pods_Kodi_Remote.framework */,
 				EA95699BEF8F153606EAEE3F /* Pods_Kodi_RemoteTests.framework */,
 			);
@@ -559,6 +595,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Kodi Remote/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -571,6 +611,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Kodi Remote/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -586,6 +630,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -607,6 +652,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "Kodi RemoteTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
