@@ -7,11 +7,15 @@ target 'Kodi Remote' do
 	source 'https://github.com/CocoaPods/Specs.git'
 	pod 'Alamofire', '~> 1.2'	
 	pod "SwiftyJSON", ">= 2.2.0"
+  	pod 'Box', '~> 1.2'
+	pod 'Result', '0.4'
 end
 
 target 'Kodi RemoteTests' do
         source 'https://github.com/CocoaPods/Specs.git'
         pod 'Alamofire', '~> 1.2'
 	pod "SwiftyJSON", ">= 2.2.0"
+	pod 'Box', '~> 1.2'
+  	pod 'Result', '0.4'
 end
 
