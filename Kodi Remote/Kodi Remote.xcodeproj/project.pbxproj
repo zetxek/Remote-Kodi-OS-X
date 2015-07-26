@@ -8,52 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		0A016C4F1AC36F4F00590E32 /* icon.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 0A016C4E1AC36F4F00590E32 /* icon.iconset */; };
-		0A016C501AC36F4F00590E32 /* icon.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 0A016C4E1AC36F4F00590E32 /* icon.iconset */; };
 		0A016C731AC4AEB900590E32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A016C711AC4AEB900590E32 /* Main.storyboard */; };
-		0A016C741AC4AEB900590E32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A016C711AC4AEB900590E32 /* Main.storyboard */; };
 		0A1E6C131ACB579700142684 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1E6C121ACB579700142684 /* SettingsViewController.swift */; };
 		0A3F9EF91AC0C2BC008C6A4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F9EF81AC0C2BC008C6A4E /* AppDelegate.swift */; };
 		0A3F9F001AC0C2BC008C6A4E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A3F9EFF1AC0C2BC008C6A4E /* Images.xcassets */; };
-		0A3F9F0F1AC0C2BC008C6A4E /* Kodi_RemoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F9F0E1AC0C2BC008C6A4E /* Kodi_RemoteTests.swift */; };
+		0A4C62CB1B6584BD00178BF5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4C62CA1B6584BD00178BF5 /* MainViewController.swift */; };
 		0A7177091B55AB59000CA6E0 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A7177071B55AB59000CA6E0 /* Fabric.framework */; };
-		0A71770A1B55AB59000CA6E0 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A7177071B55AB59000CA6E0 /* Fabric.framework */; };
 		0A71770B1B55AB59000CA6E0 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A7177081B55AB59000CA6E0 /* Crashlytics.framework */; };
-		0A71770C1B55AB59000CA6E0 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A7177081B55AB59000CA6E0 /* Crashlytics.framework */; };
 		0A71770E1B55ABDF000CA6E0 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A71770D1B55ABDF000CA6E0 /* libc++.dylib */; };
 		0A7177101B55ABE8000CA6E0 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A71770F1B55ABE8000CA6E0 /* libz.dylib */; };
 		0A7177121B55ABF0000CA6E0 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A7177111B55ABF0000CA6E0 /* Security.framework */; };
 		0A7177141B55ABFA000CA6E0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A7177131B55ABF9000CA6E0 /* SystemConfiguration.framework */; };
-		0A7177151B55AC3A000CA6E0 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A7177111B55ABF0000CA6E0 /* Security.framework */; };
-		0A7177161B55AC42000CA6E0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A7177131B55ABF9000CA6E0 /* SystemConfiguration.framework */; };
-		0A7177171B55AC85000CA6E0 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A71770D1B55ABDF000CA6E0 /* libc++.dylib */; };
-		0A7177181B55AC8F000CA6E0 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A71770F1B55ABE8000CA6E0 /* libz.dylib */; };
 		0A71771A1B55ADB4000CA6E0 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A7177191B55ADB4000CA6E0 /* ReactiveCocoa.framework */; };
-		0A71771B1B55ADB4000CA6E0 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A7177191B55ADB4000CA6E0 /* ReactiveCocoa.framework */; };
 		0A71771C1B55B149000CA6E0 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A7177191B55ADB4000CA6E0 /* ReactiveCocoa.framework */; };
 		0A71771D1B55B149000CA6E0 /* ReactiveCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0A7177191B55ADB4000CA6E0 /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0A71771F1B55BA9A000CA6E0 /* Pods_Kodi_Remote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52B2AE5329A537DA9172082B /* Pods_Kodi_Remote.framework */; };
-		0A8A48961AC4AF36000EB0CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8A48951AC4AF36000EB0CF /* ViewController.swift */; };
-		0A8A48971AC4AF36000EB0CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8A48951AC4AF36000EB0CF /* ViewController.swift */; };
 		0A8A489A1AC4AF3E000EB0CF /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8A48991AC4AF3E000EB0CF /* APIManager.swift */; };
-		0A8A489B1AC4AF3E000EB0CF /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8A48991AC4AF3E000EB0CF /* APIManager.swift */; };
 		0A8A489E1AC4AF5C000EB0CF /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8A489D1AC4AF5C000EB0CF /* WindowController.swift */; };
-		0A8A489F1AC4AF5C000EB0CF /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8A489D1AC4AF5C000EB0CF /* WindowController.swift */; };
 		0A8A48A11AC4B0FF000EB0CF /* ResponderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8A48A01AC4B0FF000EB0CF /* ResponderView.swift */; };
-		0A8A48A21AC4B0FF000EB0CF /* ResponderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8A48A01AC4B0FF000EB0CF /* ResponderView.swift */; };
 		0A9D39CC1ACDE2E300223DB3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9D39CB1ACDE2E300223DB3 /* Constants.swift */; };
-		0A9D39CD1ACDE2E300223DB3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9D39CB1ACDE2E300223DB3 /* Constants.swift */; };
-		10A80F81B72824B486BD9100 /* Pods_Kodi_RemoteTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA95699BEF8F153606EAEE3F /* Pods_Kodi_RemoteTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		0A3F9F091AC0C2BC008C6A4E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0A3F9EEB1AC0C2BC008C6A4E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0A3F9EF21AC0C2BC008C6A4E;
-			remoteInfo = "Kodi Remote";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		0A71771E1B55B149000CA6E0 /* Embed Frameworks */ = {
@@ -77,9 +51,10 @@
 		0A3F9EF71AC0C2BC008C6A4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A3F9EF81AC0C2BC008C6A4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
 		0A3F9EFF1AC0C2BC008C6A4E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "../../Kodi Remote/Images.xcassets"; sourceTree = "<group>"; };
-		0A3F9F081AC0C2BC008C6A4E /* Kodi RemoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Kodi RemoteTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A3F9F0D1AC0C2BC008C6A4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A3F9F0E1AC0C2BC008C6A4E /* Kodi_RemoteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kodi_RemoteTests.swift; sourceTree = "<group>"; };
+		0A4C62CA1B6584BD00178BF5 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		0A4C62CD1B65878600178BF5 /* SwiftLog.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftLog.framework; path = "Pods/../build/Debug/Pods-Kodi Remote/SwiftLog.framework"; sourceTree = "<group>"; };
 		0A7177071B55AB59000CA6E0 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		0A7177081B55AB59000CA6E0 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		0A71770D1B55ABDF000CA6E0 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
@@ -87,7 +62,6 @@
 		0A7177111B55ABF0000CA6E0 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		0A7177131B55ABF9000CA6E0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		0A7177191B55ADB4000CA6E0 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ReactiveCocoa.framework; sourceTree = "<group>"; };
-		0A8A48951AC4AF36000EB0CF /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0A8A48991AC4AF3E000EB0CF /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		0A8A489D1AC4AF5C000EB0CF /* WindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
 		0A8A48A01AC4B0FF000EB0CF /* ResponderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponderView.swift; sourceTree = "<group>"; };
@@ -114,21 +88,6 @@
 				0A7177091B55AB59000CA6E0 /* Fabric.framework in Frameworks */,
 				0A71771C1B55B149000CA6E0 /* ReactiveCocoa.framework in Frameworks */,
 				0A71771A1B55ADB4000CA6E0 /* ReactiveCocoa.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0A3F9F051AC0C2BC008C6A4E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0A7177181B55AC8F000CA6E0 /* libz.dylib in Frameworks */,
-				0A7177171B55AC85000CA6E0 /* libc++.dylib in Frameworks */,
-				0A7177161B55AC42000CA6E0 /* SystemConfiguration.framework in Frameworks */,
-				0A7177151B55AC3A000CA6E0 /* Security.framework in Frameworks */,
-				10A80F81B72824B486BD9100 /* Pods_Kodi_RemoteTests.framework in Frameworks */,
-				0A71770C1B55AB59000CA6E0 /* Crashlytics.framework in Frameworks */,
-				0A71770A1B55AB59000CA6E0 /* Fabric.framework in Frameworks */,
-				0A71771B1B55ADB4000CA6E0 /* ReactiveCocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,7 +135,6 @@
 			isa = PBXGroup;
 			children = (
 				0A3F9EF31AC0C2BC008C6A4E /* Kodi Remote.app */,
-				0A3F9F081AC0C2BC008C6A4E /* Kodi RemoteTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -224,7 +182,7 @@
 		0A8A48941AC4AF36000EB0CF /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				0A8A48951AC4AF36000EB0CF /* ViewController.swift */,
+				0A4C62CA1B6584BD00178BF5 /* MainViewController.swift */,
 				0A1E6C121ACB579700142684 /* SettingsViewController.swift */,
 			);
 			path = ViewControllers;
@@ -265,6 +223,7 @@
 		ADD37F41870A7FE965077237 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0A4C62CD1B65878600178BF5 /* SwiftLog.framework */,
 				0A7177191B55ADB4000CA6E0 /* ReactiveCocoa.framework */,
 				0A7177131B55ABF9000CA6E0 /* SystemConfiguration.framework */,
 				0A7177111B55ABF0000CA6E0 /* Security.framework */,
@@ -303,6 +262,7 @@
 				F2C8BBF503771874FFF16E09 /* Embed Pods Frameworks */,
 				F2B7443FE76BCECC014B3414 /* Copy Pods Resources */,
 				0A71771E1B55B149000CA6E0 /* Embed Frameworks */,
+				0AC0E3181B62D4EB003D940C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -312,27 +272,6 @@
 			productName = "Kodi Remote";
 			productReference = 0A3F9EF31AC0C2BC008C6A4E /* Kodi Remote.app */;
 			productType = "com.apple.product-type.application";
-		};
-		0A3F9F071AC0C2BC008C6A4E /* Kodi RemoteTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0A3F9F151AC0C2BC008C6A4E /* Build configuration list for PBXNativeTarget "Kodi RemoteTests" */;
-			buildPhases = (
-				83A53422F05E9D5CE0B1963A /* Check Pods Manifest.lock */,
-				0A3F9F041AC0C2BC008C6A4E /* Sources */,
-				0A3F9F051AC0C2BC008C6A4E /* Frameworks */,
-				0A3F9F061AC0C2BC008C6A4E /* Resources */,
-				534630E945FD4CED7525ED06 /* Embed Pods Frameworks */,
-				AF6DD261A0F24D987E6F66C5 /* Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0A3F9F0A1AC0C2BC008C6A4E /* PBXTargetDependency */,
-			);
-			name = "Kodi RemoteTests";
-			productName = "Kodi RemoteTests";
-			productReference = 0A3F9F081AC0C2BC008C6A4E /* Kodi RemoteTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -345,10 +284,6 @@
 				TargetAttributes = {
 					0A3F9EF21AC0C2BC008C6A4E = {
 						CreatedOnToolsVersion = 6.2;
-					};
-					0A3F9F071AC0C2BC008C6A4E = {
-						CreatedOnToolsVersion = 6.2;
-						TestTargetID = 0A3F9EF21AC0C2BC008C6A4E;
 					};
 				};
 			};
@@ -366,7 +301,6 @@
 			projectRoot = "";
 			targets = (
 				0A3F9EF21AC0C2BC008C6A4E /* Kodi Remote */,
-				0A3F9F071AC0C2BC008C6A4E /* Kodi RemoteTests */,
 			);
 		};
 /* End PBXProject section */
@@ -382,62 +316,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0A3F9F061AC0C2BC008C6A4E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0A016C501AC36F4F00590E32 /* icon.iconset in Resources */,
-				0A016C741AC4AEB900590E32 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		534630E945FD4CED7525ED06 /* Embed Pods Frameworks */ = {
+		0AC0E3181B62D4EB003D940C /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Kodi RemoteTests/Pods-Kodi RemoteTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		83A53422F05E9D5CE0B1963A /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		AF6DD261A0F24D987E6F66C5 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Kodi RemoteTests/Pods-Kodi RemoteTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "";
 		};
 		D2C7D2BD8DD1684C4401C13D /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -495,34 +388,13 @@
 				0A8A48A11AC4B0FF000EB0CF /* ResponderView.swift in Sources */,
 				0A9D39CC1ACDE2E300223DB3 /* Constants.swift in Sources */,
 				0A8A489E1AC4AF5C000EB0CF /* WindowController.swift in Sources */,
-				0A8A48961AC4AF36000EB0CF /* ViewController.swift in Sources */,
 				0A3F9EF91AC0C2BC008C6A4E /* AppDelegate.swift in Sources */,
 				0A1E6C131ACB579700142684 /* SettingsViewController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0A3F9F041AC0C2BC008C6A4E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0A8A489B1AC4AF3E000EB0CF /* APIManager.swift in Sources */,
-				0A8A48A21AC4B0FF000EB0CF /* ResponderView.swift in Sources */,
-				0A8A489F1AC4AF5C000EB0CF /* WindowController.swift in Sources */,
-				0A8A48971AC4AF36000EB0CF /* ViewController.swift in Sources */,
-				0A9D39CD1ACDE2E300223DB3 /* Constants.swift in Sources */,
-				0A3F9F0F1AC0C2BC008C6A4E /* Kodi_RemoteTests.swift in Sources */,
+				0A4C62CB1B6584BD00178BF5 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		0A3F9F0A1AC0C2BC008C6A4E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0A3F9EF21AC0C2BC008C6A4E /* Kodi Remote */;
-			targetProxy = 0A3F9F091AC0C2BC008C6A4E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		0A016C711AC4AEB900590E32 /* Main.storyboard */ = {
@@ -622,6 +494,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/build/Debug/Pods-Kodi",
+					Remote,
 				);
 				INFOPLIST_FILE = "Kodi Remote/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -638,52 +512,12 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/build/Debug/Pods-Kodi",
+					Remote,
 				);
 				INFOPLIST_FILE = "Kodi Remote/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		0A3F9F161AC0C2BC008C6A4E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 79BB9F64A85A0C0F988BEF94 /* Pods-Kodi RemoteTests.debug.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				COMBINE_HIDPI_IMAGES = YES;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "Kodi RemoteTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kodi Remote.app/Contents/MacOS/Kodi Remote";
-			};
-			name = Debug;
-		};
-		0A3F9F171AC0C2BC008C6A4E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 59CB53679F328BC50C70A07B /* Pods-Kodi RemoteTests.release.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				COMBINE_HIDPI_IMAGES = YES;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
-				INFOPLIST_FILE = "Kodi RemoteTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kodi Remote.app/Contents/MacOS/Kodi Remote";
 			};
 			name = Release;
 		};
@@ -704,15 +538,6 @@
 			buildConfigurations = (
 				0A3F9F131AC0C2BC008C6A4E /* Debug */,
 				0A3F9F141AC0C2BC008C6A4E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		0A3F9F151AC0C2BC008C6A4E /* Build configuration list for PBXNativeTarget "Kodi RemoteTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0A3F9F161AC0C2BC008C6A4E /* Debug */,
-				0A3F9F171AC0C2BC008C6A4E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

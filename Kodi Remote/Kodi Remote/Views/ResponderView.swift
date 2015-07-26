@@ -22,7 +22,8 @@ class ResponderView : NSView {
     }
     
     override func keyDown(theEvent: NSEvent) {
-        NSLog("KeyDown: %@", theEvent)
+        
+        log.debug("KeyDown: \(theEvent)")
         
         if let action : NSString = WindowController.Static.keyActions[theEvent.keyCode]{
             apiManager.sendMessage(action as String)

@@ -58,7 +58,7 @@ class APIManager{
 
             let credential = NSURLCredential(user: user as String, password: password as String, persistence: .ForSession)
 
-            NSLog("Invoking Kodi server, url=\(url)")
+            log.debug("Invoking Kodi server, url=\(url)")
 
             
             let URL = NSURL(string: url)!
@@ -99,7 +99,7 @@ class APIManager{
             
         } else {
             
-            NSLog("Error retrieving user options")
+            log.debug("Error retrieving user options")
             delegate?.didMissUserSettings("You must enter the server URL in the settings")
             
         }

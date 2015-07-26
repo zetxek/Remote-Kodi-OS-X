@@ -44,7 +44,7 @@ class SettingsViewController : NSViewController {
     
     @IBAction func saveAction(sender: AnyObject!) {
         
-        NSLog("Saving settings")
+        log.debug("Saving settings")
         
         let formValidationResult = self.isValidForm()
         
@@ -67,7 +67,7 @@ class SettingsViewController : NSViewController {
             }
             
             
-            NSLog("Settings saved!")
+            log.debug("Settings saved!")
             self.dismissController(sender)
             
         }else{
@@ -82,7 +82,7 @@ class SettingsViewController : NSViewController {
     }
     
     @IBAction func cancelAction(sender: AnyObject!) {
-        NSLog("Cancelling settings")
+        log.debug("Cancelling settings")
         self.dismissController(sender)
     }
 
@@ -97,12 +97,12 @@ extension SettingsViewController{
     func isValidForm() ->  (formIsOK: Bool, errorMessage: NSString){
     
         if (!isValidUrl(txtUrl.stringValue)){
-            NSLog("Invalid URL")
+            log.debug("Invalid URL")
              return (false, "You must enter a valid URL, starting with http")
         }
 
         if (!txtPort.stringValue.isEmpty && !isValidNumber(txtPort.stringValue)){
-            NSLog("Invalid port")
+            log.debug("Invalid port")
             return (false, "You must enter a valid port number")
         }
         

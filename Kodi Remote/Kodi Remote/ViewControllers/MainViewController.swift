@@ -9,8 +9,9 @@
 import Cocoa
 import Alamofire
 import SwiftyJSON
+import ReactiveCocoa
 
-class ViewController: NSViewController {
+class MainViewController: NSViewController {
     
     @IBOutlet var btnOk: NSButton!
     @IBOutlet var btnUp: NSButton!
@@ -36,6 +37,12 @@ class ViewController: NSViewController {
             btnBack:    "Input.Back",
             btnContext: "Input.ContextMenu"
         ]
+        
+        
+        let signalFromview = MutableProperty<String>("")
+        
+        //signalFromView.observe(next: { println($0) })
+
     }
 
 
@@ -57,7 +64,7 @@ class ViewController: NSViewController {
     
     override func keyDown(theEvent: NSEvent) {
         
-        NSLog("ViewController. KeyPress detected: %@", theEvent)
+        log.debug("ViewController. KeyPress detected: \(theEvent)")
         
         if (theEvent.keyCode == 1){
             //do whatever when the s key is pressed

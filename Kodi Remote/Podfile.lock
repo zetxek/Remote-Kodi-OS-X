@@ -4,17 +4,20 @@ PODS:
   - Result (0.4):
     - Box (~> 1.2)
   - SwiftyJSON (2.2.0)
+  - XCGLogger (2.1.1)
 
 DEPENDENCIES:
   - Alamofire (~> 1.2)
   - Box (~> 1.2)
   - Result (= 0.4)
   - SwiftyJSON (>= 2.2.0)
+  - XCGLogger (~> 2.1)
 
 SPEC CHECKSUMS:
   Alamofire: 11a6022f5089887d92ffb5a3014c97a0a915ab98
   Box: a92e8aa4c099e6bc0733829665caf9e668ef53b8
   Result: 03957bbe943dd96a9f12ff1c6b5ac65c8a6b64aa
   SwiftyJSON: 0b3e6c07af17ff745e77e8e9984097b55c956e5c
+  XCGLogger: 8df921bcf88abbd511b887c8febde8163d624d81
 
 COCOAPODS: 0.37.2

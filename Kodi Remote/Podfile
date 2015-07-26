@@ -9,6 +9,7 @@ target 'Kodi Remote' do
 	pod "SwiftyJSON", ">= 2.2.0"
   	pod 'Box', '~> 1.2'
 	pod 'Result', '0.4'
+  	pod 'XCGLogger', '~> 2.1'
 end
 
 target 'Kodi RemoteTests' do
@@ -17,5 +18,6 @@ target 'Kodi RemoteTests' do
 	pod "SwiftyJSON", ">= 2.2.0"
 	pod 'Box', '~> 1.2'
   	pod 'Result', '0.4'
+  	pod 'XCGLogger', '~> 2.1'
 end
 
