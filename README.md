@@ -15,8 +15,8 @@ Please note that for using remote calls to Kodi/XBMC you'll need to [enable JSON
 
 ###Download link ###
 
-[v0.1 download link](https://bitbucket.org/zetxek/remote-kodi-os-x/src/1a2bec5a9cb2ac86e6cf91dd997eb552ee1ef6cb/Releases/Kodi_Remote_v0.1-dev.zip?at=master) 1st release of the app. Pretty simple, complicated having less features and still being considered a remote, but might be useful to showcase the concept.
-
+- [v0.2 download link](https://bitbucket.org/zetxek/remote-kodi-os-x/downloads/Kodi_Remote.app_v0.2.zip) 2nd release of the app. Improvements in design, some changes in code to come.
+- [v0.1 download link](https://bitbucket.org/zetxek/remote-kodi-os-x/src/1a2bec5a9cb2ac86e6cf91dd997eb552ee1ef6cb/Releases/Kodi_Remote_v0.1-dev.zip?at=master) 1st release of the app. Pretty simple, complicated having less features and still being considered a remote, but might be useful to showcase the concept.
 
 
 ###TODO ###
