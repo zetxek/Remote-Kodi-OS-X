@@ -10,16 +10,16 @@ The idea for the project came after using some mobile remotes for Kodi, where yo
 
 Please note that for using remote calls to Kodi/XBMC you'll need to [enable JSON RPC server](http://kodi.wiki/view/JSON-RPC_API#Enabling_JSON-RPC)!
 
+![2015-08-27 01.22.50 am.png](https://bitbucket.org/repo/d9xzL8/images/4192496449-2015-08-27%2001.22.50%20am.png)
+![2015-08-27 01.22.59 am.png](https://bitbucket.org/repo/d9xzL8/images/2359747551-2015-08-27%2001.22.59%20am.png)
+
 ###Download link ###
 
 [v0.1 download link](https://bitbucket.org/zetxek/remote-kodi-os-x/src/1a2bec5a9cb2ac86e6cf91dd997eb552ee1ef6cb/Releases/Kodi_Remote_v0.1-dev.zip?at=master) 1st release of the app. Pretty simple, complicated having less features and still being considered a remote, but might be useful to showcase the concept.
 
-![2015-06-04 12.56.24 am.png](https://bitbucket.org/repo/d9xzL8/images/3943866683-2015-06-04%2012.56.24%20am.png)
-![2015-06-04 12.56.31 am.png](https://bitbucket.org/repo/d9xzL8/images/3372732242-2015-06-04%2012.56.31%20am.png)
 
 
 ###TODO ###
 
-* Polish the design
 * Buttons for home, volume
 * Binary generation
