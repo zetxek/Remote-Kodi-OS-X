@@ -21,8 +21,6 @@
 		0A7177101B55ABE8000CA6E0 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A71770F1B55ABE8000CA6E0 /* libz.dylib */; };
 		0A7177121B55ABF0000CA6E0 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A7177111B55ABF0000CA6E0 /* Security.framework */; };
 		0A7177141B55ABFA000CA6E0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A7177131B55ABF9000CA6E0 /* SystemConfiguration.framework */; };
-		0A71771A1B55ADB4000CA6E0 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A7177191B55ADB4000CA6E0 /* ReactiveCocoa.framework */; };
-		0A71771C1B55B149000CA6E0 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A7177191B55ADB4000CA6E0 /* ReactiveCocoa.framework */; };
 		0A71771D1B55B149000CA6E0 /* ReactiveCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0A7177191B55ADB4000CA6E0 /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0A71771F1B55BA9A000CA6E0 /* Pods_Kodi_Remote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52B2AE5329A537DA9172082B /* Pods_Kodi_Remote.framework */; };
 		0A8A489A1AC4AF3E000EB0CF /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8A48991AC4AF3E000EB0CF /* APIManager.swift */; };
@@ -124,8 +122,6 @@
 				0A71770E1B55ABDF000CA6E0 /* libc++.dylib in Frameworks */,
 				0A71770B1B55AB59000CA6E0 /* Crashlytics.framework in Frameworks */,
 				0A7177091B55AB59000CA6E0 /* Fabric.framework in Frameworks */,
-				0A71771C1B55B149000CA6E0 /* ReactiveCocoa.framework in Frameworks */,
-				0A71771A1B55ADB4000CA6E0 /* ReactiveCocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
