@@ -9,19 +9,39 @@
 import Foundation
 import Alamofire
 import SwiftyJSON
-
-protocol APIManagerDelegate{
-    
-    func didReceiveError(error: NSError!)
-    func didMissUserSettings(error: NSString)
-    
-}
+import ReactiveCocoa
 
 class APIManager{
     
     init(){
-    
+        requestManager = Manager()
     }
+    
+    func requestWorkspaces() -> SignalProducer<NSDictionary, NSError> {
+        return SignalProducer { observer, _ in
+            self.requestManager
+                .request(
+                    .GET,
+                    "https://app.asana.com/api/1.0/workspaces")
+                .validate()
+                .responseJSON {_, _, JSON, error in
+                    if let error = error {
+                        sendError(observer, error)
+                    } else {
+                        if let dict = JSON as? NSDictionary {
+                            sendNext(observer, dict)
+                        }
+                        sendCompleted(observer)
+                    }
+            }
+            return
+        }
+    }
+    
+    // MARK: private
+    private let requestManager: Alamofire.Manager
+
+    
 
     var delegate : APIManagerDelegate?
     
@@ -66,7 +86,12 @@ class APIManager{
             mutableURLRequest.HTTPMethod = "POST"
             
             var JSONSerializationError: NSError? = nil
-            mutableURLRequest.HTTPBody = NSJSONSerialization.dataWithJSONObject(parameters, options: nil, error: &JSONSerializationError)
+            do {
+                mutableURLRequest.HTTPBody = try NSJSONSerialization.dataWithJSONObject(parameters, options: [])
+            } catch var error as NSError {
+                JSONSerializationError = error
+                mutableURLRequest.HTTPBody = nil
+            }
             mutableURLRequest.setValue("application/json", forHTTPHeaderField: "Content-Type")
             
             request(mutableURLRequest)
@@ -109,4 +134,12 @@ class APIManager{
         
     }
 
+}
+
+
+protocol APIManagerDelegate{
+    
+    func didReceiveError(error: NSError!)
+    func didMissUserSettings(error: NSString)
+    
 }

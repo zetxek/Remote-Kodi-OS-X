@@ -24,9 +24,12 @@ class MainViewController: NSViewController {
     let apiManager : APIManager = APIManager()
     var btnActions : [NSButton: String] = [NSButton: String]()
     
+    //private
+    private let model: MainViewModel = MainViewModel()
+    private weak var delegate: MainViewControllerDelegate?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         
         btnActions = [
             btnOk:      "Input.Select",
@@ -38,42 +41,66 @@ class MainViewController: NSViewController {
             btnContext: "Input.ContextMenu"
         ]
         
-        
         let signalFromview = MutableProperty<String>("")
         
         //signalFromView.observe(next: { println($0) })
-
-    }
-
-
-    override var representedObject: AnyObject? {
-        didSet {
-        // Update the view, if already loaded.
-        }
+        
+        
     }
 
     @IBAction func btnClick(sender: AnyObject) {
         
-        if let action : NSString = btnActions[sender as! NSButton]{
+        flashHighlightedButtonThen {
+            if let action : NSString = self.btnActions[sender as! NSButton]{
+                self.apiManager.sendMessage(action as String)
+            }
+        }
+
+        
+        /*if let action : NSString = btnActions[sender as! NSButton]{
             apiManager.sendMessage(action as String)
-        }
+        }*/
         
     }
     
-    
-    
-    override func keyDown(theEvent: NSEvent) {
+    /*func apiCall(action : String){
         
-        log.debug("ViewController. KeyPress detected: \(theEvent)")
+        let searchResults = action
+            |> flatMap(.Latest) { query in
+                let URLRequest = self.searchRequestWithEscapedQuery(query)
+                return NSURLSession.sharedSession().rac_dataWithRequest(URLRequest)
+            }
+            |> map { data, URLResponse in
+                let string = String(data: data, encoding: NSUTF8StringEncoding)!
+                return parseJSONResultsFromString(string)
+            }
+            |> observeOn(UIScheduler())
+
+    
+    }*/
+
+    
+    func flashHighlightedButtonThen(callback: () -> ()) {
         
-        if (theEvent.keyCode == 1){
-            //do whatever when the s key is pressed
+        let mainQueue = dispatch_get_main_queue()
+        let toggleInterval = Int64(NSEC_PER_SEC) / 20
+        let numberOfToggles: Int64 = 3
+        
+        for i: Int64 in 0...numberOfToggles {
+            let time = dispatch_time(DISPATCH_TIME_NOW, toggleInterval * i)
+            dispatch_after(time, mainQueue) {
+                if i < numberOfToggles {
+                    //change
+                } else {
+                    //end
+                    callback()
+                }
+            }
         }
-        
     }
-   
-    
-    
     
 }
 
+protocol MainViewControllerDelegate: NSObjectProtocol {
+    func mainViewControllerDidChangeFittingSize(mainViewController: MainViewController)
+}
