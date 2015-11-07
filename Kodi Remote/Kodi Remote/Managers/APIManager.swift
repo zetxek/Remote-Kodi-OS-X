@@ -66,24 +66,29 @@ class APIManager{
             mutableURLRequest.HTTPMethod = "POST"
             
             var JSONSerializationError: NSError? = nil
-            mutableURLRequest.HTTPBody = NSJSONSerialization.dataWithJSONObject(parameters, options: nil, error: &JSONSerializationError)
+            do{
+                try
+                    mutableURLRequest.HTTPBody = NSJSONSerialization.dataWithJSONObject(parameters, options: NSJSONWritingOptions())
+            }catch{
+                
+            }
+            
             mutableURLRequest.setValue("application/json", forHTTPHeaderField: "Content-Type")
             
             request(mutableURLRequest)
                 .authenticate(usingCredential: credential)
-                .responseJSON
-                { (request, response, data, error) in
+                .responseJSON { response in
                     
                     // Request error
-                    if(error != nil) {
-                        
-                        self.delegate?.didReceiveError(error)
+                    if(response.result.error != nil) {
+                    
+                        self.delegate?.didReceiveError(response.result.error)
                         
                     }else{
                         
                         // No error
-                        var json = JSON(data!)
-                        println(json)
+                        let json = JSON(response.data!)
+                        print(json)
                         
                         
                     }

@@ -15,7 +15,7 @@ let log = XCGLogger.defaultInstance()
 class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
-        log.setup(logLevel: .Debug, showLogLevel: true, showFileNames: true, showLineNumbers: true)
+        log.setup(.Debug, showLogLevel: true, showFileNames: true, showLineNumbers: true)
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {

@@ -27,7 +27,7 @@ class SettingsViewController : NSViewController {
         }
 
         if let port = preferences.integerForKey(UserPreferences.preferencePort) as Int! {
-            txtPort.stringValue = toString(port)
+            txtPort.stringValue = String(port)
         }
         
         if let user: NSString = preferences.stringForKey(UserPreferences.preferenceUser) {
