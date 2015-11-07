@@ -9,7 +9,6 @@
 import Cocoa
 import Alamofire
 import SwiftyJSON
-import ReactiveCocoa
 
 class MainViewController: NSViewController {
     
@@ -37,11 +36,7 @@ class MainViewController: NSViewController {
             btnBack:    "Input.Back",
             btnContext: "Input.ContextMenu"
         ]
-        
-        
-        let signalFromview = MutableProperty<String>("")
-        
-        //signalFromView.observe(next: { println($0) })
+                
 
     }
 
