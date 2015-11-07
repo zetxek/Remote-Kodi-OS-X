@@ -5,19 +5,9 @@ use_frameworks!
 
 target 'Kodi Remote' do
 	source 'https://github.com/CocoaPods/Specs.git'
-	pod 'Alamofire', '~> 1.2'	
-	pod "SwiftyJSON", ">= 2.2.0"
-  	pod 'Box', '~> 1.2'
-	pod 'Result', '0.4'
-  	pod 'XCGLogger', '~> 2.1'
+	pod 'Alamofire', '~> 3.1.2'
+	pod 'SwiftyJSON', '~> 2.3.1'
+  	pod 'Box', '~> 2.0'
+	pod 'Result', '0.6.0-beta.6'
+  	pod 'XCGLogger', '~> 3.0'
 end
-
-target 'Kodi RemoteTests' do
-        source 'https://github.com/CocoaPods/Specs.git'
-        pod 'Alamofire', '~> 1.2'
-	pod "SwiftyJSON", ">= 2.2.0"
-	pod 'Box', '~> 1.2'
-  	pod 'Result', '0.4'
-  	pod 'XCGLogger', '~> 2.1'
-end
-
