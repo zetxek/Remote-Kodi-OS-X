@@ -65,7 +65,6 @@ class APIManager{
             let mutableURLRequest = NSMutableURLRequest(URL: URL)
             mutableURLRequest.HTTPMethod = "POST"
             
-            var JSONSerializationError: NSError? = nil
             do{
                 try
                     mutableURLRequest.HTTPBody = NSJSONSerialization.dataWithJSONObject(parameters, options: NSJSONWritingOptions())
