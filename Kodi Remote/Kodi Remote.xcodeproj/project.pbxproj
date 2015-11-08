@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A016C4F1AC36F4F00590E32 /* icon.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 0A016C4E1AC36F4F00590E32 /* icon.iconset */; };
 		0A016C731AC4AEB900590E32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A016C711AC4AEB900590E32 /* Main.storyboard */; };
 		0A1E6C131ACB579700142684 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1E6C121ACB579700142684 /* SettingsViewController.swift */; };
 		0A3F9EF91AC0C2BC008C6A4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F9EF81AC0C2BC008C6A4E /* AppDelegate.swift */; };
@@ -61,7 +60,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0A016C4E1AC36F4F00590E32 /* icon.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = icon.iconset; sourceTree = "<group>"; };
 		0A016C721AC4AEB900590E32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0A1E6C121ACB579700142684 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		0A3F9EF31AC0C2BC008C6A4E /* Kodi Remote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kodi Remote.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -156,7 +154,6 @@
 				0AA7A1CF1B8E749E0014FCF4 /* top.png */,
 				0AA7A1D01B8E749E0014FCF4 /* top@2x.png */,
 				0A3F9EFF1AC0C2BC008C6A4E /* Images.xcassets */,
-				0A016C4E1AC36F4F00590E32 /* icon.iconset */,
 			);
 			path = Imgs;
 			sourceTree = "<group>";
@@ -380,7 +377,6 @@
 				0AA7A1D41B8E749E0014FCF4 /* bottom@2x.png in Resources */,
 				0A3F9F001AC0C2BC008C6A4E /* Images.xcassets in Resources */,
 				0AA7A1D21B8E749E0014FCF4 /* back@2x.png in Resources */,
-				0A016C4F1AC36F4F00590E32 /* icon.iconset in Resources */,
 				0AA7A1DE1B8E749E0014FCF4 /* top@2x.png in Resources */,
 				0AA7A1DB1B8E749E0014FCF4 /* right.png in Resources */,
 				0AA7A1D61B8E749E0014FCF4 /* left@2x.png in Resources */,
@@ -579,8 +575,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/build/Debug/Pods-Kodi",
-					Remote,
 				);
 				INFOPLIST_FILE = "Kodi Remote/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -598,8 +592,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/build/Debug/Pods-Kodi",
-					Remote,
 				);
 				INFOPLIST_FILE = "Kodi Remote/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
