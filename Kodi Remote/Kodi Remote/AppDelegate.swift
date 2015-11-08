@@ -10,6 +10,7 @@ import Cocoa
 import XCGLogger
 import Fabric
 import Crashlytics
+import Parse
 
 let log = XCGLogger.defaultInstance()
 
