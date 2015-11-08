@@ -15,6 +15,7 @@
 		0A4C62CB1B6584BD00178BF5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4C62CA1B6584BD00178BF5 /* MainViewController.swift */; };
 		0A4C62D11B659FCD00178BF5 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4C62D01B659FCD00178BF5 /* MainViewModel.swift */; };
 		0A4C62D31B66E68700178BF5 /* PreferenceUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4C62D21B66E68700178BF5 /* PreferenceUtils.swift */; };
+		0A524BF51BF00A750095740C /* APIKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A524BF41BF00A750095740C /* APIKeys.plist */; };
 		0A7177091B55AB59000CA6E0 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A7177071B55AB59000CA6E0 /* Fabric.framework */; };
 		0A71770B1B55AB59000CA6E0 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A7177081B55AB59000CA6E0 /* Crashlytics.framework */; };
 		0A71770E1B55ABDF000CA6E0 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A71770D1B55ABDF000CA6E0 /* libc++.dylib */; };
@@ -75,6 +76,7 @@
 		0A4C62CD1B65878600178BF5 /* SwiftLog.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftLog.framework; path = "Pods/../build/Debug/Pods-Kodi Remote/SwiftLog.framework"; sourceTree = "<group>"; };
 		0A4C62D01B659FCD00178BF5 /* MainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewModel.swift; path = ViewModels/MainViewModel.swift; sourceTree = "<group>"; };
 		0A4C62D21B66E68700178BF5 /* PreferenceUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferenceUtils.swift; sourceTree = "<group>"; };
+		0A524BF41BF00A750095740C /* APIKeys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = APIKeys.plist; path = Resources/Strings/APIKeys.plist; sourceTree = SOURCE_ROOT; };
 		0A7177071B55AB59000CA6E0 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		0A7177081B55AB59000CA6E0 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		0A71770D1B55ABDF000CA6E0 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
@@ -176,6 +178,7 @@
 		0A2A1BA61BEFD6A700587FAE /* Strings */ = {
 			isa = PBXGroup;
 			children = (
+				0A524BF41BF00A750095740C /* APIKeys.plist */,
 				0A2A1BA71BEFD6A700587FAE /* ProjectTexts.strings */,
 			);
 			path = Strings;
@@ -395,6 +398,7 @@
 				0AA7A1D21B8E749E0014FCF4 /* back@2x.png in Resources */,
 				0AF2EE5A1BEFCA3000395313 /* automatic_versioning.sh in Resources */,
 				0AA7A1DE1B8E749E0014FCF4 /* top@2x.png in Resources */,
+				0A524BF51BF00A750095740C /* APIKeys.plist in Resources */,
 				0AA7A1DB1B8E749E0014FCF4 /* right.png in Resources */,
 				0AA7A1D61B8E749E0014FCF4 /* left@2x.png in Resources */,
 				0AA7A1DC1B8E749E0014FCF4 /* right@2x.png in Resources */,
