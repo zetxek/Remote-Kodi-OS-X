@@ -43,6 +43,7 @@
 		0AA7A1E01B8E78490014FCF4 /* TransparentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA7A1DF1B8E78490014FCF4 /* TransparentButton.swift */; };
 		0AA7A1E31B8E7C9A0014FCF4 /* secondary_action.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AA7A1E11B8E7C9A0014FCF4 /* secondary_action.png */; };
 		0AA7A1E41B8E7C9A0014FCF4 /* secondary_action@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AA7A1E21B8E7C9A0014FCF4 /* secondary_action@2x.png */; };
+		0AF2EE5A1BEFCA3000395313 /* automatic_versioning.sh in Resources */ = {isa = PBXBuildFile; fileRef = 0AF2EE591BEFCA3000395313 /* automatic_versioning.sh */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -100,6 +101,7 @@
 		0AA7A1DF1B8E78490014FCF4 /* TransparentButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransparentButton.swift; sourceTree = "<group>"; };
 		0AA7A1E11B8E7C9A0014FCF4 /* secondary_action.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = secondary_action.png; sourceTree = "<group>"; };
 		0AA7A1E21B8E7C9A0014FCF4 /* secondary_action@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "secondary_action@2x.png"; sourceTree = "<group>"; };
+		0AF2EE591BEFCA3000395313 /* automatic_versioning.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = automatic_versioning.sh; sourceTree = "<group>"; };
 		14042A5C9B757E5A202DEC29 /* Pods-Kodi Remote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kodi Remote.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kodi Remote/Pods-Kodi Remote.release.xcconfig"; sourceTree = "<group>"; };
 		20E51806F2D31FE52785684C /* Pods-Kodi Remote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kodi Remote.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kodi Remote/Pods-Kodi Remote.debug.xcconfig"; sourceTree = "<group>"; };
 		52B2AE5329A537DA9172082B /* Pods_Kodi_Remote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kodi_Remote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -171,6 +173,7 @@
 		0A3F9EEA1AC0C2BC008C6A4E = {
 			isa = PBXGroup;
 			children = (
+				0AF2EE591BEFCA3000395313 /* automatic_versioning.sh */,
 				0A3F9EF51AC0C2BC008C6A4E /* Kodi Remote */,
 				0A3F9F0B1AC0C2BC008C6A4E /* Kodi RemoteTests */,
 				0A3F9EF41AC0C2BC008C6A4E /* Products */,
@@ -321,7 +324,8 @@
 				F2C8BBF503771874FFF16E09 /* Embed Pods Frameworks */,
 				F2B7443FE76BCECC014B3414 /* Copy Pods Resources */,
 				0A71771E1B55B149000CA6E0 /* Embed Frameworks */,
-				0AC0E3181B62D4EB003D940C /* ShellScript */,
+				0AC0E3181B62D4EB003D940C /* Run script: Fabric */,
+				0AF2EE581BEFC9D600395313 /* Run Script: Automatic Versioning */,
 			);
 			buildRules = (
 			);
@@ -377,6 +381,7 @@
 				0AA7A1D41B8E749E0014FCF4 /* bottom@2x.png in Resources */,
 				0A3F9F001AC0C2BC008C6A4E /* Images.xcassets in Resources */,
 				0AA7A1D21B8E749E0014FCF4 /* back@2x.png in Resources */,
+				0AF2EE5A1BEFCA3000395313 /* automatic_versioning.sh in Resources */,
 				0AA7A1DE1B8E749E0014FCF4 /* top@2x.png in Resources */,
 				0AA7A1DB1B8E749E0014FCF4 /* right.png in Resources */,
 				0AA7A1D61B8E749E0014FCF4 /* left@2x.png in Resources */,
@@ -395,18 +400,33 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0AC0E3181B62D4EB003D940C /* ShellScript */ = {
+		0AC0E3181B62D4EB003D940C /* Run script: Fabric */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Run script: Fabric";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "./Fabric.framework/run 887247ff2f9ad003c64692515d957f39c279b45f 7e55f8835ec9d902cac6fb40edde02b6b3912de2e4f9793f4c932d9a210c9a4b";
+		};
+		0AF2EE581BEFC9D600395313 /* Run Script: Automatic Versioning */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script: Automatic Versioning";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = ./automatic_versioning.sh;
 		};
 		D2C7D2BD8DD1684C4401C13D /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
