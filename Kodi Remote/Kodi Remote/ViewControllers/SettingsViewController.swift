@@ -73,7 +73,7 @@ class SettingsViewController : NSViewController {
         }else{
             
             let alertMessage:NSAlert = NSAlert()
-            alertMessage.messageText = "Ooops!"
+            alertMessage.messageText = NSLocalizedString("error_title", comment: "")
             alertMessage.informativeText = formValidationResult.errorMessage as String
             alertMessage.runModal()
             
@@ -98,12 +98,12 @@ extension SettingsViewController{
     
         if (!isValidUrl(txtUrl.stringValue)){
             log.debug("Invalid URL")
-             return (false, "You must enter a valid URL, starting with http")
+             return (false, NSLocalizedString("error_invalid_url", comment: ""))
         }
 
         if (!txtPort.stringValue.isEmpty && !isValidNumber(txtPort.stringValue)){
             log.debug("Invalid port")
-            return (false, "You must enter a valid port number")
+            return (false, NSLocalizedString("error_invalid_port", comment: ""))
         }
         
         

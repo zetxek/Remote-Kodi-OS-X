@@ -10,4 +10,5 @@ target 'Kodi Remote' do
   	pod 'Box', '~> 2.0'
 	pod 'Result', '0.6.0-beta.6'
   	pod 'XCGLogger', '~> 3.0'
+    pod 'Parse', '~> 1.9'
 end

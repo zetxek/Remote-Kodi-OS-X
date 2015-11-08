@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		0A016C731AC4AEB900590E32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A016C711AC4AEB900590E32 /* Main.storyboard */; };
 		0A1E6C131ACB579700142684 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1E6C121ACB579700142684 /* SettingsViewController.swift */; };
+		0A2A1BA81BEFD6A700587FAE /* ProjectTexts.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A2A1BA71BEFD6A700587FAE /* ProjectTexts.strings */; };
 		0A3F9EF91AC0C2BC008C6A4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F9EF81AC0C2BC008C6A4E /* AppDelegate.swift */; };
 		0A3F9F001AC0C2BC008C6A4E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A3F9EFF1AC0C2BC008C6A4E /* Images.xcassets */; };
 		0A4C62CB1B6584BD00178BF5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4C62CA1B6584BD00178BF5 /* MainViewController.swift */; };
 		0A4C62D11B659FCD00178BF5 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4C62D01B659FCD00178BF5 /* MainViewModel.swift */; };
 		0A4C62D31B66E68700178BF5 /* PreferenceUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4C62D21B66E68700178BF5 /* PreferenceUtils.swift */; };
+		0A524BF51BF00A750095740C /* APIKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A524BF41BF00A750095740C /* APIKeys.plist */; };
 		0A7177091B55AB59000CA6E0 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A7177071B55AB59000CA6E0 /* Fabric.framework */; };
 		0A71770B1B55AB59000CA6E0 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A7177081B55AB59000CA6E0 /* Crashlytics.framework */; };
 		0A71770E1B55ABDF000CA6E0 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A71770D1B55ABDF000CA6E0 /* libc++.dylib */; };
@@ -43,6 +45,7 @@
 		0AA7A1E01B8E78490014FCF4 /* TransparentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA7A1DF1B8E78490014FCF4 /* TransparentButton.swift */; };
 		0AA7A1E31B8E7C9A0014FCF4 /* secondary_action.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AA7A1E11B8E7C9A0014FCF4 /* secondary_action.png */; };
 		0AA7A1E41B8E7C9A0014FCF4 /* secondary_action@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AA7A1E21B8E7C9A0014FCF4 /* secondary_action@2x.png */; };
+		0AF2EE5A1BEFCA3000395313 /* automatic_versioning.sh in Resources */ = {isa = PBXBuildFile; fileRef = 0AF2EE591BEFCA3000395313 /* automatic_versioning.sh */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -62,6 +65,7 @@
 /* Begin PBXFileReference section */
 		0A016C721AC4AEB900590E32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0A1E6C121ACB579700142684 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		0A2A1BA71BEFD6A700587FAE /* ProjectTexts.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = ProjectTexts.strings; sourceTree = "<group>"; };
 		0A3F9EF31AC0C2BC008C6A4E /* Kodi Remote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kodi Remote.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A3F9EF71AC0C2BC008C6A4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A3F9EF81AC0C2BC008C6A4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +76,7 @@
 		0A4C62CD1B65878600178BF5 /* SwiftLog.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftLog.framework; path = "Pods/../build/Debug/Pods-Kodi Remote/SwiftLog.framework"; sourceTree = "<group>"; };
 		0A4C62D01B659FCD00178BF5 /* MainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewModel.swift; path = ViewModels/MainViewModel.swift; sourceTree = "<group>"; };
 		0A4C62D21B66E68700178BF5 /* PreferenceUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferenceUtils.swift; sourceTree = "<group>"; };
+		0A524BF41BF00A750095740C /* APIKeys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = APIKeys.plist; path = Resources/Strings/APIKeys.plist; sourceTree = SOURCE_ROOT; };
 		0A7177071B55AB59000CA6E0 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		0A7177081B55AB59000CA6E0 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		0A71770D1B55ABDF000CA6E0 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
@@ -100,6 +105,7 @@
 		0AA7A1DF1B8E78490014FCF4 /* TransparentButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransparentButton.swift; sourceTree = "<group>"; };
 		0AA7A1E11B8E7C9A0014FCF4 /* secondary_action.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = secondary_action.png; sourceTree = "<group>"; };
 		0AA7A1E21B8E7C9A0014FCF4 /* secondary_action@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "secondary_action@2x.png"; sourceTree = "<group>"; };
+		0AF2EE591BEFCA3000395313 /* automatic_versioning.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = automatic_versioning.sh; sourceTree = "<group>"; };
 		14042A5C9B757E5A202DEC29 /* Pods-Kodi Remote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kodi Remote.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kodi Remote/Pods-Kodi Remote.release.xcconfig"; sourceTree = "<group>"; };
 		20E51806F2D31FE52785684C /* Pods-Kodi Remote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kodi Remote.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kodi Remote/Pods-Kodi Remote.debug.xcconfig"; sourceTree = "<group>"; };
 		52B2AE5329A537DA9172082B /* Pods_Kodi_Remote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kodi_Remote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,6 +135,7 @@
 		0A016C491AC36C3C00590E32 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0A2A1BA61BEFD6A700587FAE /* Strings */,
 				0A016C4A1AC36C4600590E32 /* Imgs */,
 			);
 			path = Resources;
@@ -168,9 +175,19 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		0A2A1BA61BEFD6A700587FAE /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				0A524BF41BF00A750095740C /* APIKeys.plist */,
+				0A2A1BA71BEFD6A700587FAE /* ProjectTexts.strings */,
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
 		0A3F9EEA1AC0C2BC008C6A4E = {
 			isa = PBXGroup;
 			children = (
+				0AF2EE591BEFCA3000395313 /* automatic_versioning.sh */,
 				0A3F9EF51AC0C2BC008C6A4E /* Kodi Remote */,
 				0A3F9F0B1AC0C2BC008C6A4E /* Kodi RemoteTests */,
 				0A3F9EF41AC0C2BC008C6A4E /* Products */,
@@ -321,7 +338,8 @@
 				F2C8BBF503771874FFF16E09 /* Embed Pods Frameworks */,
 				F2B7443FE76BCECC014B3414 /* Copy Pods Resources */,
 				0A71771E1B55B149000CA6E0 /* Embed Frameworks */,
-				0AC0E3181B62D4EB003D940C /* ShellScript */,
+				0AC0E3181B62D4EB003D940C /* Run script: Fabric */,
+				0AF2EE581BEFC9D600395313 /* Run Script: Automatic Versioning */,
 			);
 			buildRules = (
 			);
@@ -374,10 +392,13 @@
 				0AA7A1E31B8E7C9A0014FCF4 /* secondary_action.png in Resources */,
 				0AA7A1D81B8E749E0014FCF4 /* menu@2x.png in Resources */,
 				0AA7A1D11B8E749E0014FCF4 /* back.png in Resources */,
+				0A2A1BA81BEFD6A700587FAE /* ProjectTexts.strings in Resources */,
 				0AA7A1D41B8E749E0014FCF4 /* bottom@2x.png in Resources */,
 				0A3F9F001AC0C2BC008C6A4E /* Images.xcassets in Resources */,
 				0AA7A1D21B8E749E0014FCF4 /* back@2x.png in Resources */,
+				0AF2EE5A1BEFCA3000395313 /* automatic_versioning.sh in Resources */,
 				0AA7A1DE1B8E749E0014FCF4 /* top@2x.png in Resources */,
+				0A524BF51BF00A750095740C /* APIKeys.plist in Resources */,
 				0AA7A1DB1B8E749E0014FCF4 /* right.png in Resources */,
 				0AA7A1D61B8E749E0014FCF4 /* left@2x.png in Resources */,
 				0AA7A1DC1B8E749E0014FCF4 /* right@2x.png in Resources */,
@@ -395,18 +416,33 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0AC0E3181B62D4EB003D940C /* ShellScript */ = {
+		0AC0E3181B62D4EB003D940C /* Run script: Fabric */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Run script: Fabric";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "./Fabric.framework/run 887247ff2f9ad003c64692515d957f39c279b45f 7e55f8835ec9d902cac6fb40edde02b6b3912de2e4f9793f4c932d9a210c9a4b";
+		};
+		0AF2EE581BEFC9D600395313 /* Run Script: Automatic Versioning */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script: Automatic Versioning";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = ./automatic_versioning.sh;
 		};
 		D2C7D2BD8DD1684C4401C13D /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

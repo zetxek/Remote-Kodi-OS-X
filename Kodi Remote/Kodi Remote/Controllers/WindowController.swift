@@ -32,7 +32,7 @@ class WindowController : NSWindowController {
     
     override func windowDidLoad() {
 
-        self.window?.title = "Kodi Remote"
+        self.window?.title = NSLocalizedString("AppTitle", comment: "")
 		self.window?.titlebarAppearsTransparent = true
 		self.window?.movableByWindowBackground  = true
 		self.window?.backgroundColor = NSColor.blackColor()
