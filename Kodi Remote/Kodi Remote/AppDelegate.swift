@@ -8,6 +8,8 @@
 
 import Cocoa
 import XCGLogger
+import Fabric
+import Crashlytics
 
 let log = XCGLogger.defaultInstance()
 
@@ -16,6 +18,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         log.setup(.Debug, showLogLevel: true, showFileNames: true, showLineNumbers: true)
+        Fabric.with([Crashlytics.self])
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {
