@@ -9,7 +9,7 @@
 import Cocoa
 
 func areSettingsValid() -> Bool{
-    let preferences = NSUserDefaults.standardUserDefaults()
+    _ = NSUserDefaults.standardUserDefaults()
 
     return true
 }

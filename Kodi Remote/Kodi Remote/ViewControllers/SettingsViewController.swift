@@ -113,7 +113,7 @@ extension SettingsViewController{
     
     func isValidUrl(url : NSString) -> Bool{
 
-        if let url = NSURL(string: url as String) {
+        if let _ = NSURL(string: url as String) {
             return true
         } else {
             return false
