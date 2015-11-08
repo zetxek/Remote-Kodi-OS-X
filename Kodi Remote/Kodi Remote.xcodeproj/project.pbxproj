@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0A016C731AC4AEB900590E32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A016C711AC4AEB900590E32 /* Main.storyboard */; };
 		0A1E6C131ACB579700142684 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1E6C121ACB579700142684 /* SettingsViewController.swift */; };
+		0A2A1BA81BEFD6A700587FAE /* ProjectTexts.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A2A1BA71BEFD6A700587FAE /* ProjectTexts.strings */; };
 		0A3F9EF91AC0C2BC008C6A4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F9EF81AC0C2BC008C6A4E /* AppDelegate.swift */; };
 		0A3F9F001AC0C2BC008C6A4E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A3F9EFF1AC0C2BC008C6A4E /* Images.xcassets */; };
 		0A4C62CB1B6584BD00178BF5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4C62CA1B6584BD00178BF5 /* MainViewController.swift */; };
@@ -63,6 +64,7 @@
 /* Begin PBXFileReference section */
 		0A016C721AC4AEB900590E32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0A1E6C121ACB579700142684 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		0A2A1BA71BEFD6A700587FAE /* ProjectTexts.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = ProjectTexts.strings; sourceTree = "<group>"; };
 		0A3F9EF31AC0C2BC008C6A4E /* Kodi Remote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kodi Remote.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A3F9EF71AC0C2BC008C6A4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A3F9EF81AC0C2BC008C6A4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 		0A016C491AC36C3C00590E32 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0A2A1BA61BEFD6A700587FAE /* Strings */,
 				0A016C4A1AC36C4600590E32 /* Imgs */,
 			);
 			path = Resources;
@@ -168,6 +171,14 @@
 				0A016C711AC4AEB900590E32 /* Main.storyboard */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		0A2A1BA61BEFD6A700587FAE /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				0A2A1BA71BEFD6A700587FAE /* ProjectTexts.strings */,
+			);
+			path = Strings;
 			sourceTree = "<group>";
 		};
 		0A3F9EEA1AC0C2BC008C6A4E = {
@@ -378,6 +389,7 @@
 				0AA7A1E31B8E7C9A0014FCF4 /* secondary_action.png in Resources */,
 				0AA7A1D81B8E749E0014FCF4 /* menu@2x.png in Resources */,
 				0AA7A1D11B8E749E0014FCF4 /* back.png in Resources */,
+				0A2A1BA81BEFD6A700587FAE /* ProjectTexts.strings in Resources */,
 				0AA7A1D41B8E749E0014FCF4 /* bottom@2x.png in Resources */,
 				0A3F9F001AC0C2BC008C6A4E /* Images.xcassets in Resources */,
 				0AA7A1D21B8E749E0014FCF4 /* back@2x.png in Resources */,
